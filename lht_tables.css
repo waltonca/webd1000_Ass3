@@ -19,7 +19,7 @@
    ===============================
 */
 @media only screen and (max-width: 640px) {
-   table, tbody, thead, tr, th, td, caption {
+   table, tbody, tr, th, td, caption {
       display: block;
    }
    thead {
@@ -47,6 +47,11 @@
    }
    td::before {
       position: absolute;
+      left: 0;
+      top: 0;
+      width: 40%;
+      content: attr(data-date);
+      padding: 5px;
    }
 }
 
