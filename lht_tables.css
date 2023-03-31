@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML and CSS, 8th Edition
+   Tutorial 6
+   Case Problem 2
+
+   Calendar Style Sheet
+   Author: Walton
+   Date:   3/30/2023
+
+   Filename:   lht_tables.css
+
+*/
+
+
+/* ===============================
+   Mobile Styles: 0px to 640px 
+   ===============================
+*/
+@media only screen and (max-width: 640px) {
+   table, tbody, thead, tr, th, td, caption {
+      display: block;
+   }
+   thead {
+      display: none;
+   }
+   table h1 {
+      display: none;
+   }
+   caption {
+      background-color: #333;
+      color: white;
+      font-size: 1.5em;
+      line-height: 2em;
+   }
+   td {
+      border: 1px dotted gray;
+      color: rgb(11,12,145);
+      position: relative;
+      padding-left: 40%;
+      min-height: 40px;
+   }
+   tr:nth-of-type(odd){
+      background-color: rgb(255, 235, 178);
+      border: 2px dotted gray;
+   }
+   td::before {
+      position: absolute;
+   }
+}
+
+
+
+
+/* =============================================
+   Tablet and Desktop Styles: greater than 640px
+   =============================================
+*/
