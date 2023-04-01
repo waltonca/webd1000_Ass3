@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML and CSS, 8th Edition
+   Tutorial 6
+   Case Problem 2
+
+   Columns Style Sheet
+   Author: Walton
+   Date:   3/31/2023
+
+   Filename:   lht_columns.css
+
+*/
+
+
+
+/* Column Styles */
+article {
+   column-count: 3;
+   column-width: 260px;
+   column-gap: 20px;
+   column-rule: 1px double rgb(154, 64, 31);
+}
+article h1 {
+   column-span: all;
+   text-align: left;
+}
+article p {
+   widows: 2;
+   orphans: 2;
+}
